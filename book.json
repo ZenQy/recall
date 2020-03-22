@@ -5,9 +5,9 @@
   ],
   "pluginsConfig": {
     "gittalk": {
-      "clientID": "8cef975f233522795b25",
-      "clientSecret": "a60c90af509bb1f44ff137956639b16c321f0dfd",
-      "repo": "gitalk",
+      "clientID": "619420771f8092f67028",
+      "clientSecret": "99218e5f39fb479daa679b0ce43204eb3c654dc7",
+      "repo": "textbook",
       "owner": "zenqy",
       "admin": [
         "zenqy"
