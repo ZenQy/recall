@@ -3,7 +3,7 @@
   "plugins": [
     "gittalk"
   ],
-  "pluginConfig": {
+  "pluginsConfig": {
     "gittalk": {
       "clientID": "8cef975f233522795b25",
       "clientSecret": "a60c90af509bb1f44ff137956639b16c321f0dfd",
