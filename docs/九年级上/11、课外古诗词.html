@@ -4,8 +4,10 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>课外古诗词 - 中学古文集</title>
+
+
         <!-- Custom HTML head -->
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -16,25 +18,28 @@
         <link rel="stylesheet" href="../css/general.css">
         <link rel="stylesheet" href="../css/chrome.css">
         <link rel="stylesheet" href="../css/print.css" media="print">
+
         <!-- Fonts -->
         <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="../fonts/fonts.css">
+
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../highlight.css">
         <link rel="stylesheet" href="../tomorrow-night.css">
         <link rel="stylesheet" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
+
     </head>
     <body>
         <!-- Provide site root to javascript -->
-        <script type="text/javascript">
+        <script>
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script type="text/javascript">
+        <script>
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -50,7 +55,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script type="text/javascript">
+        <script>
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -62,7 +67,7 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script type="text/javascript">
+        <script>
             var html = document.querySelector('html');
             var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
@@ -83,7 +88,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
+                                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -93,7 +98,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
@@ -110,6 +115,7 @@
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
+
                     </div>
                 </div>
 
@@ -123,8 +129,9 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script type="text/javascript">
+                <script>
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -152,14 +159,14 @@
 今我何功德？曾不事农桑。<br />
 吏禄三百石，岁晏有余粮，<br />
 念此私自愧，尽日不能忘。</p>
-<hr>
+<hr />
 <ul>
 <li><strong>月夜</strong></li>
 </ul>
 <p><strong>刘方平</strong></p>
 <p>更深月色半人家，北斗阑干南斗斜。<br />
 今夜偏知春气暖，虫声新透绿窗纱。</p>
-<hr>
+<hr />
 <ul>
 <li><strong>商山早行</strong></li>
 </ul>
@@ -168,14 +175,14 @@
 鸡声茅店月，人迹板桥霜。<br />
 槲叶落山路，枳花照驿墙。<br />
 因思杜陵梦，凫雁满回塘。</p>
-<hr>
+<hr />
 <ul>
 <li><strong>卜算子·咏梅</strong></li>
 </ul>
 <p><strong>陆游</strong></p>
 <p>驿外断桥边，寂寞开无主。已是黄昏独自愁，更著风和雨。<br />
 无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。</p>
-<hr>
+<hr />
 <ul>
 <li><strong>破阵子·燕子来时新社</strong></li>
 </ul>
@@ -184,7 +191,7 @@
 池上碧苔三四点，叶底黄鹂一两声，日长飞絮轻。</p>
 <p>巧笑东邻女伴，采桑径里逢迎。<br />
 疑怪昨宵春梦好，元是今朝斗草嬴，笑从双脸生。</p>
-<hr>
+<hr />
 <ul>
 <li><strong>浣溪沙·簌簌衣巾落枣花</strong></li>
 </ul>
@@ -192,24 +199,24 @@
 <p>徐门石潭谢雨，道上作五首。潭在城东二十里，常与泗水增减清浊相应。</p>
 <p>簌簌衣巾落枣花，村南村北响缲车，牛衣古柳卖黄瓜。<br />
 酒困路长惟欲睡，日高人渴漫思茶。敲门试问野人家。</p>
-<hr>
+<hr />
 <p><strong>醉花阴·薄雾浓云愁永昼</strong></p>
 <p><strong>李清照</strong></p>
 <p>薄雾浓云愁永昼，瑞脑消金兽。佳节又重阳，玉枕纱厨，半夜凉初透。<br />
 东篱把酒黄昏后，有暗香盈袖。莫道不销魂，帘卷西风，人比黄花瘦。</p>
-<hr>
+<hr />
 <ul>
 <li><strong>南乡子·登京口北固亭有怀</strong></li>
 </ul>
 <p><strong>辛弃疾</strong></p>
 <p>何处望神州？满眼风光北固楼。千古兴亡多少事？悠悠。不尽长江滚滚流。<br />
 年少万兜鍪，坐断东南战未休。天下英雄谁敌手？曹刘。生子当如孙仲谋。</p>
-<hr>
+<hr />
 <p><strong>山坡羊·骊山怀古</strong></p>
 <p><strong>张养浩</strong></p>
 <p>骊山四顾，阿房一炬，当时奢侈今何处？只见草萧疏，水萦纡。<br />
 至今遗恨迷烟树。列国周齐秦汉楚，赢，都变做了土；输，都变做了土。</p>
-<hr>
+<hr />
 <ul>
 <li><strong>朝天子·咏喇叭</strong></li>
 </ul>
@@ -225,9 +232,11 @@
                             <a rel="prev" href="../九年级上/10、词五首.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
+
                             <a rel="next" href="../九年级下/1、公输.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
+
                         <div style="clear: both"></div>
                     </nav>
                 </div>
@@ -237,6 +246,7 @@
                     <a rel="prev" href="../九年级上/10、词五首.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
+
                     <a rel="next" href="../九年级下/1、公输.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -244,16 +254,24 @@
 
         </div>
 
-        <script type="text/javascript">
+
+
+
+        <script>
             window.playground_copyable = true;
         </script>
-        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
 
         <!-- Custom JS scripts -->
+
+
     </body>
 </html>
